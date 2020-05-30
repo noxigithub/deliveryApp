@@ -1,64 +1,223 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>My order now - app </title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-<header>
-  <div class="container">
-    <div class="row justify-content-between align-items-center">
-      <div class="col-auto">
-        <h1>My order now</h1>
-      </div>
-      <div class="col-auto">
-        <div class="avatar-container" data-target=#profileOptions data-toggle="modal">
-          <img src="img/avatar.jpg" alt="">
-          <i class="fas fa-cog"></i>
+<head>
+  <meta charset="utf-8">
+  <title>My order now - app </title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-auto">
+          <h1>My order now</h1>
+        </div>
+        <div class="col-auto">
+          <div class="avatar-container" data-target=#profileOptions data-toggle="modal">
+            <img src="img/avatar.jpg" alt="">
+            <i class="fas fa-cog"></i>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
 
-  <div class="modal fade profile-options-modal" id="profileOptions" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" >Opciones</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+    <div class="modal fade profile-options-modal" id="profileOptions" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" >Opciones</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul class="profile-options-list">
+              <li>
+                <a href="#"> <li class="fas fa-user"></li> Mi perfil</a>
+              </li>
+              <li>
+                <a href="#"> <li class="fas fa-map-marker-alt"></li> Mis direcciones</a>
+              </li>
+              <li>
+                <a href="#"> <li class="fas fa-credit-card"></li> Mis tarjetas</a>
+              </li>
+              <li>
+                <a href="#" class="text-danger"> <li class="fas fa-times-circle"></li> Cerrar sesión</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
       </div>
-      <div class="modal-body">
-        <ul class="profile-options-list">
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="search-container">
+        <form class="" action="index.html" method="post">
+          <input type="text" name="searchInput" id="searchInput">
+          <button type="button" class="btn btn-primary btn-block">Buscar</button>
+        </form>
+      </div>
+
+      <div class="products-list-container">
+        <ul>
           <li>
-            <a href="#"> <li class="fas fa-user"></li> Mi perfil</a>
+            <a href="#">
+              <div class="product-image">
+                <img src="img/producto1.jpg" alt="">
+              </div>
+              <div class="product-info">
+                <div class="product-info-inner">
+                  <div class="tags">
+                    <span>Descuento</span><span>Envio gratis</span>
+                  </div>
+                  <h3 class="product-name">Burrito Especial </h3>
+                  <p class="restaurant">Restaurante de prueba</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <p class="product-price"> <span>$</span>14,99</p>
+              </div>
+            </a>
           </li>
+
           <li>
-            <a href="#"> <li class="fas fa-map-marker-alt"></li> Mis direcciones</a>
+            <a href="#">
+              <div class="product-image">
+                <img src="img/producto2.jpg" alt="">
+              </div>
+              <div class="product-info">
+                <div class="product-info-inner">
+                  <div class="tags">
+                    <span>Descuento</span><span>Envio gratis</span>
+                  </div>
+                  <h3 class="product-name">Postre de la casa </h3>
+                  <p class="restaurant">Restaurante de prueba</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <p class="product-price"> <span>$</span>14,99</p>
+              </div>
+            </a>
           </li>
+
+
           <li>
-            <a href="#"> <li class="fas fa-credit-card"></li> Mis tarjetas</a>
+            <a href="#">
+              <div class="product-image">
+                <img src="img/producto3.jpg" alt="">
+              </div>
+              <div class="product-info">
+                <div class="product-info-inner">
+                  <div class="tags">
+                    <span>Descuento</span><span>Envio gratis</span>
+                  </div>
+                  <h3 class="product-name">Salmon</h3>
+                  <p class="restaurant">Restaurante de prueba</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <p class="product-price"> <span>$</span>20,50</p>
+              </div>
+            </a>
           </li>
+
+
           <li>
-            <a href="#" class="text-danger"> <li class="fas fa-times-circle"></li> Cerrar sesión</a>
+            <a href="#">
+              <div class="product-image">
+                <img src="img/producto4.jpg" alt="">
+              </div>
+              <div class="product-info">
+                <div class="product-info-inner">
+                  <div class="tags">
+                    <span>Descuento</span><span>Envio gratis</span>
+                  </div>
+                  <h3 class="product-name">Donas glaseadas x6</h3>
+                  <p class="restaurant">Restaurante de prueba</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <p class="product-price"> <span>$</span>9,99</p>
+              </div>
+            </a>
           </li>
+
+          <li>
+            <a href="#">
+              <div class="product-image">
+                <img src="img/producto5.jpg" alt="">
+              </div>
+              <div class="product-info">
+                <div class="product-info-inner">
+                  <div class="tags">
+                    <span>Descuento</span><span>Envio gratis</span>
+                  </div>
+                  <h3 class="product-name">Mega hamburguesa</h3>
+                  <p class="restaurant">Restaurante de prueba</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <p class="product-price"> <span>$</span>12,99</p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <div class="product-image">
+                <img src="img/producto6.jpg" alt="">
+              </div>
+              <div class="product-info">
+                <div class="product-info-inner">
+                  <div class="tags">
+                    <span>Descuento</span><span>Envio gratis</span>
+                  </div>
+                  <h3 class="product-name">Carne asada con ensalada</h3>
+                  <p class="restaurant">Restaurante de prueba</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <p class="product-price"> <span>$</span>17,99</p>
+              </div>
+            </a>
+          </li>
+
+
         </ul>
       </div>
-
     </div>
-  </div>
-</div>
-</header>
-
-
+  </main>
 
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="https://unpkg.com/@popperjs/core@2"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  </body>
+</body>
 </html>

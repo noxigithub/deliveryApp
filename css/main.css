@@ -9943,6 +9943,7 @@ header .avatar-container i {
   position: absolute;
   letf: 0;
   top: 0;
+  right: 2px;
   font-size: 20px;
   color: #ff7f00;
 }
