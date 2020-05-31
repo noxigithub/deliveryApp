@@ -9976,17 +9976,18 @@ header .avatar-container i {
   font-size: 20px;
   color: #ff7f00;
 }
-header .profile-options-modal .profile-options-list {
+
+.profile-options-modal .profile-options-list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-header .profile-options-modal .profile-options-list li a {
+.profile-options-modal .profile-options-list li a {
   display: block;
   padding: 10px 0;
   color: #495057;
 }
-header .profile-options-modal .profile-options-list li a i {
+.profile-options-modal .profile-options-list li a i {
   display: inline-block;
   width: 18px;
   text-align: center;
@@ -10079,4 +10080,14 @@ header .profile-options-modal .profile-options-list li a i {
 .products-list-container ul li .product-info .stars i {
   font-size: 13px;
   color: yellow;
+}
+.products-list-container ul li .product-info .product-price {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 300;
+  color: #495057;
+}
+.products-list-container ul li .product-info .product-price span {
+  font-size: 13px;
+  margin-right: 3px;
 }
